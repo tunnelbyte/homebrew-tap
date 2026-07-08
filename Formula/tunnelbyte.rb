@@ -5,21 +5,21 @@
 class Tunnelbyte < Formula
   desc "Pay-per-use WireGuard tunnels from your terminal."
   homepage "https://tunnelbyte.dev"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tunnelbyte/tunnelbyte/releases/download/v0.1.0/tunnelbyte_0.1.0_darwin_x86_64.tar.gz"
-      sha256 "67dc3c0557b253302b2d8319e22f8367dd63ea1923589afbf986198af6365e79"
+      url "https://github.com/tunnelbyte/tunnelbyte/releases/download/v0.1.1/tunnelbyte_0.1.1_darwin_x86_64.tar.gz"
+      sha256 "0ab8d72f1a62c02c41e96c2d18171fa7c58bfe875760bb5364a8c595104667d9"
 
       define_method(:install) do
         bin.install "tunnelbyte"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tunnelbyte/tunnelbyte/releases/download/v0.1.0/tunnelbyte_0.1.0_darwin_arm64.tar.gz"
-      sha256 "e504a0715fb806bb8026ba91011f79efbabbcee8c6e75de3bc9a61259a08fcd1"
+      url "https://github.com/tunnelbyte/tunnelbyte/releases/download/v0.1.1/tunnelbyte_0.1.1_darwin_arm64.tar.gz"
+      sha256 "94a1b59a1320b826a6085d181c5a2b98bf1c9f767e207220c7d840db7b7b634e"
 
       define_method(:install) do
         bin.install "tunnelbyte"
@@ -29,15 +29,15 @@ class Tunnelbyte < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tunnelbyte/tunnelbyte/releases/download/v0.1.0/tunnelbyte_0.1.0_linux_x86_64.tar.gz"
-      sha256 "5432769ae6e8f7f2760447e855eca5ed369b76fe35e3ac13cccbed6ac93bd369"
+      url "https://github.com/tunnelbyte/tunnelbyte/releases/download/v0.1.1/tunnelbyte_0.1.1_linux_x86_64.tar.gz"
+      sha256 "701a8c07db409f9aed3eaf7a71593719c33e67a2c7a929bbf728ffe459b7e855"
       define_method(:install) do
         bin.install "tunnelbyte"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tunnelbyte/tunnelbyte/releases/download/v0.1.0/tunnelbyte_0.1.0_linux_arm64.tar.gz"
-      sha256 "d501da198e354e05a638a5628f315102201df00046c96f5b8a82aa2e02bdc215"
+      url "https://github.com/tunnelbyte/tunnelbyte/releases/download/v0.1.1/tunnelbyte_0.1.1_linux_arm64.tar.gz"
+      sha256 "504584b4e3695a5bee07989125627e541cabc8102fbf433bc086139cf610cdd7"
       define_method(:install) do
         bin.install "tunnelbyte"
       end
